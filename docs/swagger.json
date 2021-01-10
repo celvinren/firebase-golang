@@ -1,0 +1,55 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Swagger Example API",
+        "contact": {},
+        "license": {
+            "name": "CalvinR"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/apis/auth/registerUser": {
+            "post": {
+                "description": "Register User",
+                "summary": "Register User",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/apis/auth/verifyEmail": {
+            "get": {
+                "description": "Verify email",
+                "summary": "Verify email",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/apis/organization/{id}": {
+            "put": {
+                "description": "Update Organization",
+                "summary": "Update Organization",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

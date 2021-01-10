@@ -1,0 +1,35 @@
+info:
+  contact: {}
+  license:
+    name: CalvinR
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /apis/auth/registerUser:
+    post:
+      description: Register User
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Register User
+  /apis/auth/verifyEmail:
+    get:
+      description: Verify email
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Verify email
+  /apis/organization/{id}:
+    put:
+      description: Update Organization
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Update Organization
+swagger: "2.0"
